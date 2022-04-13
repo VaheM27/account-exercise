@@ -1,0 +1,24 @@
+<table>
+    <tr *ngFor="let account of accounts">
+        <td>
+            <h3>ID</h3>
+            <p>{{account.id}}</p>
+        </td>
+        <td>
+            <h3>Name</h3>
+            <p>{{account.owner}}</p>
+        </td>
+        <td>
+            <h3>Created On</h3>
+            <p>{{account.createdAt}}</p>
+
+        </td>
+        <td>
+            <h3>Owner</h3>
+            <p>{{account.owner}}</p>
+        </td>
+        <td>
+            <h3>Action</h3>
+            <button class="button" [routerLink]="['/accounts/',account.id]">View</button>
+        </td>
+    </tr>

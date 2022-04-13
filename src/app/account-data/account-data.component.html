@@ -1,0 +1,27 @@
+<button [routerLink]="['/accounts/']">Go back</button>
+<div *ngIf="account">
+    <table class="GeneratedTable">
+        <tbody>
+        <tr>
+        <td><h3>ID</h3></td>
+        <td><p>{{account.id}}</p></td>
+        </tr>
+        <tr>
+        <td><h3>Name</h3></td>
+        <td><p>{{account.title}}</p></td>
+        </tr>
+        <tr>
+        <td><h3>Owner</h3></td>
+        <td><p>{{account.owner}}</p></td>
+        </tr>
+        <tr>
+        <td><h3>Created On</h3></td>
+        <td>{{account.createdAt}}</td>
+        </tr>
+        <tr>
+        <td><h3>Updated On</h3></td>
+        <td><p>{{account.updatedAt}}</p></td>
+        </tr>
+        </tbody>
+        </table>
+</div>
